@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #eceff1;
+  --txt-color: #546e7a;
+  --title-color: #37474f;
+  --link-color: #2196f3;
+  --link-color-hover: #1976D2;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+  font-weight: 300;
+}
+
+p {
+  color: var(--txt-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.pp {
+  min-width: 400px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.pp > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(96, 125, 139, .3);
+}
+
+.pp > img:hover {
+  filter: grayscale(100%);
+}
+
+.m-b-1 {
+  margin-bottom: 1rem;
+}
